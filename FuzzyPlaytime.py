@@ -50,7 +50,7 @@ class MenuScreen:
         self.setting_btn = tk.Button(self.window, text="Settings", command=self.enter_settings)
         self.setting_btn.config(pady="2", padx="300", bg="black", fg="white", font="Arial, 18")
         self.setting_btn.pack(side="bottom")
-
+        
         self.start_btn = tk.Button(self.window, text="Start", command=self.start_game)
         self.start_btn.config(pady="2", padx="300", bg="black", fg="white", font="Arial, 18")
         self.start_btn.pack(side="bottom")
@@ -110,3 +110,4 @@ class Player:
 if __name__ == "__main__":
     start = MenuScreen()
     start.window.mainloop()
+
