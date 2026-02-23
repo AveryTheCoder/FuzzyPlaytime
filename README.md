@@ -17,5 +17,5 @@ If you dont have an IDE to edit this in, i would recomend these free IDEs
 If you want to help but don't know how to code, you can use these trustworthy sources.
 <ul>
   <li><a href="https://www.w3schools.com">W3schools</a> - It's completly free and easy to use</li>
-  <li><a href="www.python.org">The offical Python website</a> - They can teach you how to do a lot of good things in python</li>
+  <li><a href="https://www.python.org">The offical Python website</a> - They can teach you how to do a lot of good things in python</li>
 </ul>
