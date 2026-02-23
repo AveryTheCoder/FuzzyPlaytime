@@ -15,7 +15,13 @@ def update():
     time.sleep(0.05)
 
 def check_health():
-    pass
+    health = Player.player.health
+    if health > 100:
+        health = 100
+    elif health == 0:
+        Player.die()
+    elif < 0:
+        health = 0
 
 def update_healthbar():
     Game.healthbar["value"] == Game.player.health
@@ -110,4 +116,5 @@ class Player:
 if __name__ == "__main__":
     start = MenuScreen()
     start.window.mainloop()
+
 
