@@ -1,0 +1,26 @@
+You wake up at the nature center for edication and child learning (NCFEACL). You are disoriented. the place is fenced in. You cant escape. You enter the building and see Fuzzy (the masscot) holding a spyglass to his eye smiling. You look around. and go behind the counter. You see an old computer (1900s era windows XP) and try to log in. you dont know the password. you find it on a bloody notecard under the desk (randomly generated in game). You can browse files and folders.
+the structure:
+
+CCTV - CCTV footage of the center
+    02-23-2011-main-entrance.mp4 - normal recording
+    02-24-2011-main-entrance.mp4 - normal recording
+    02-25-2011-main-entrance.mp4 - something is off
+    02-26-2011-main-entrance.mp4 - the ccenters "Hour of Joy" (Poppy playtime refrence)
+Documents - Reports
+    daily-customer-report-02-23-2011.docx - normal report
+    daily-customer-report-02-24-2011.docx - abnormaly high
+    daily-customer-report-02-25-2011.docx - abnormaly low
+Passwords - password exes
+    PinManager.exe - for pins
+    PasswordManager.exe - for passwords
+Pictures - pictures of things
+    trees.png - normal
+    kids.png - normal
+    sus - a folder that this employ made once he started noticing strange things
+        fuzzy-moved.png - fuzzy moved a bit
+        what.png - something in the dark
+        blood-in-factory.png - blood on the factory floor
+
+The folders CCTV and Pictures are password protected
+
+You then explore more and meet 5 of the monsters. (they are still and dont kill yet). Fuzzy is nice when you meet him. he gets turn evil my other monsters for a tmporary time. After you find the computer and look through what you can, you go explore and learn about the chars. Try not to anger Teacher Melody and dont go near vent anytime between 6 to 7:15 PM (Miss Hawk will drag you in and rip your face off) you anger Melody by giving wrong answers or being rude.

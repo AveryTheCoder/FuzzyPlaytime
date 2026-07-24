@@ -1,0 +1,111 @@
+# Fuzzy Playtime - Game Mechanics
+
+## TIME SYSTEM
+- 1 real second = 1 game minute
+- A full in-game day = ~24 real minutes
+- The game lasts as long as it needs to
+- Time affects monster behavior and hostility
+
+## PLAYER
+- First-person 3D exploration
+- Health: 100 HP
+- Movement: WASD, sprint with Shift
+- Inventory system (collect items, notes, keys)
+- Crosshair for aiming/interacting
+
+## COMPUTER DESKTOP
+- XP-style desktop environment behind the front desk
+- Password-locked login (password found on bloody notecard, randomly generated per playthrough)
+- Passwords stored in game_data.json
+- Browseable file system:
+  - CCTV/ [PASSWORD LOCKED]
+    - 02-23-2011-main-entrance.mp4 (normal)
+    - 02-24-2011-main-entrance.mp4 (normal)
+    - 02-25-2011-main-entrance.mp4 (something off)
+    - 02-26-2011-main-entrance.mp4 (Hour of Joy)
+  - Documents/
+    - daily-customer-report-02-23-2011.docx (normal)
+    - daily-customer-report-02-24-2011.docx (abnormally high)
+    - daily-customer-report-02-25-2011.docx (abnormally low)
+  - Passwords/
+    - PinManager.exe
+    - PasswordManager.exe
+  - Pictures/ [PASSWORD LOCKED]
+    - trees.png (normal)
+    - kids.png (normal)
+    - sus/
+      - fuzzy-moved.png
+      - what.png
+      - blood-in-factory.png
+
+## MONSTERS
+
+### Fuzzy (Mascot)
+- Design: Huggy Wuggy with western hat, green
+- Starts friendly, turned evil by other monsters temporarily
+- Kills same way as Huggy Wuggy (chase and stuff into body)
+
+### Teacher Melody
+- Design: Mommy Long Legs with western gear, maroon
+- Walks you around exhibits, quizzes on nature/history
+- Angered by wrong answers or making her wait too long
+- QUIZ MECHANIC: Dialogue and interactive, depending on quiz type
+- Kills by removing glove and stabbing face with prototype claws
+
+### Mr. JJ
+- Design: Western cowboy
+- Lurks in American Revolution exhibit at midnight
+- Extremely hostile, will try to kill any way possible
+
+### John and Jeff (One Monster)
+- Design: Two static western guys in pickup truck display
+- Only attack if jingle button pressed 15-17 times repeatedly
+- Kills by extending neck via spring and biting head off
+
+### Miss Indiana
+- Design: 1700s Indian
+- Always nice, answers exhibit questions
+- Dies at the end saving the player (ally NPC)
+
+### Miss Hawk
+- Design: Hawk with cowboy hat
+- 11:00 AM - 4:00 PM: Patrols exhibit, answers questions (friendly)
+- 4:30 PM - 5:00 PM: Stalks from vents
+- 6:00 PM - 7:15 PM: Vent death trap - drag in and rip face off
+- Stay away from vents during danger hours
+
+### Old Guy Patriot
+- Design: Continental soldier
+- Armed with musket
+- Shoots if you don't follow American Revolution exhibit rules
+- Kills via musket shot or bayonet
+
+### Potty the Parrot
+- Design: Green and yellow parrot, scarred
+- Yaps constantly, fights with Miss Hawk
+- Violent at random times
+- Kills by pecking your skull
+
+## STORY BEATS
+1. Wake up disoriented at NCFEACL
+2. Enter building, see Fuzzy statue with spyglass
+3. Find computer behind counter
+4. Log in with password from bloody notecard
+5. Browse files and folders
+6. Explore and meet 4 monsters (still, not hostile yet):
+   - Fuzzy (friendly)
+   - John and Jeff
+   - Miss Hawk
+   - Teacher Melody
+7. Learn about characters through exploration
+8. Navigate monster schedules and hazards
+9. Miss Indiana dies saving you
+10. Escape the center
+
+## GAMEPLAY LOOP
+- Explore exhibits during safe hours
+- Use computer to uncover lore
+- Avoid hostile monsters based on time
+- Solve puzzles and answer Melody's quizzes
+- Collect items and information
+- Progress through story beats

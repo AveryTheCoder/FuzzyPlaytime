@@ -1,0 +1,225 @@
+{
+    "objects": {
+        "main_computer": {
+            "passwords": {
+                "cctv": "NCFEACL2011",
+                "pictures": "SUSPHOTOS"
+            }
+        }
+    },
+    "entities": {
+        "fuzzy": {
+            "name": "Fuzzy",
+            "description": "The mascot. Nice when not turned evil by other monsters.",
+            "type": "MONSTER_FUZZY",
+            "spawn": {"x": 5, "y": 0, "z": -3},
+            "speed": 4.0,
+            "attack_range": 2.5,
+            "sight_range": 20.0,
+            "behavior": {
+                "friendly_speed_multiplier": 0.3,
+                "follow_distance": 4.0,
+                "turns_evil_if": "teacher_angry OR bad_behavior >= 5",
+                "evil_duration": 30.0,
+                "is_in_event": false
+            },
+            "color": {
+                "friendly": {"r": 0, "g": 200, "b": 0, "a": 255},
+                "hostile": {"r": 0, "g": 180, "b": 0, "a": 255}
+            }
+        },
+        "melody": {
+            "name": "Teacher Melody",
+            "description": "Quizzes you on nature and history. Gets angry at wrong answers and bad manners.",
+            "type": "MONSTER_MELODY",
+            "spawn": {"x": -5, "y": 0, "z": -6},
+            "speed": 3.0,
+            "attack_range": 2.0,
+            "sight_range": 5.0,
+            "behavior": {
+                "patience_timer": 10.0,
+                "anger_per_wrong": 30.0,
+                "anger_per_tick": 10.0,
+                "hostile_threshold": 100.0,
+                "hostile_duration": 5.0,
+                "quiz_questions": [
+                    {
+                        "question": "What is the largest mammal on Earth?",
+                        "options": [
+                            {"text": "Blue Whale", "correct": true, "response": "Correct! The Blue Whale can grow up to 100 feet!"},
+                            {"text": "Elephant", "correct": false, "response": "Incorrect! The elephant is the largest LAND mammal."},
+                            {"text": "Giraffe", "correct": false, "response": "No, giraffes are tall but not the largest mammal."}
+                        ]
+                    },
+                    {
+                        "question": "What gas do trees absorb from the atmosphere?",
+                        "options": [
+                            {"text": "Carbon Dioxide", "correct": true, "response": "Excellent! Trees use CO2 for photosynthesis!"},
+                            {"text": "Oxygen", "correct": false, "response": "No, trees RELEASE oxygen, they absorb CO2."},
+                            {"text": "Nitrogen", "correct": false, "response": "Not quite. Nitrogen is abundant but not what trees absorb."}
+                        ]
+                    },
+                    {
+                        "question": "In what year was the NCFEACL founded?",
+                        "options": [
+                            {"text": "1952", "correct": true, "response": "That's right! We've been educating children for decades!"},
+                            {"text": "1999", "correct": false, "response": "Incorrect! We were around long before that."},
+                            {"text": "2010", "correct": false, "response": "No, we were established much earlier."}
+                        ]
+                    }
+                ]
+            },
+            "color": {
+                "friendly": {"r": 180, "g": 50, "b": 80, "a": 255},
+                "hostile": {"r": 139, "g": 0, "b": 50, "a": 255}
+            }
+        },
+        "miss_hawk": {
+            "name": "Miss Hawk",
+            "description": "Security hawk. Friendly during day, hostile 6:00 PM - 7:15 PM near vents.",
+            "type": "MONSTER_HAWK",
+            "spawn": {"x": 8, "y": 0, "z": 3},
+            "speed": 5.0,
+            "attack_range": 999.0,
+            "sight_range": 30.0,
+            "behavior": {
+                "patrol_speed_multiplier": 0.5,
+                "patrol_follow_distance": 6.0,
+                "time_hostile_start": {"hour": 18, "minute": 0},
+                "time_hostile_end": {"hour": 19, "minute": 15},
+                "time_stalking_start": {"hour": 16, "minute": 30},
+                "time_stalking_end": {"hour": 17, "minute": 0},
+                "time_patrol_start": {"hour": 11, "minute": 0},
+                "time_patrol_end": {"hour": 16, "minute": 0},
+                "drags_into_vent": true,
+                "rips_face_off": true
+            },
+            "color": {
+                "friendly": {"r": 139, "g": 90, "b": 43, "a": 255},
+                "hostile": {"r": 200, "g": 0, "b": 0, "a": 255}
+            }
+        },
+        "jj": {
+            "name": "Mr. JJ",
+            "description": "Extremely hostile cowboy. Lurks in American Revolution exhibit at midnight.",
+            "type": "MONSTER_JJ",
+            "spawn": {"x": -7, "y": 0, "z": -8},
+            "speed": 6.0,
+            "attack_range": 2.0,
+            "sight_range": 20.0,
+            "behavior": {
+                "active_start": {"hour": 23, "minute": 30},
+                "active_end": {"hour": 0, "minute": 30},
+                "aggressive_pursuit": true,
+                "returns_to_spawn_when_inactive": true
+            },
+            "color": {
+                "friendly": {"r": 60, "g": 30, "b": 10, "a": 255},
+                "hostile": {"r": 60, "g": 30, "b": 10, "a": 255}
+            }
+        },
+        "john_jeff": {
+            "name": "John & Jeff",
+            "description": "Two static figures in a pickup truck. Attack after jingle button pressed 15-17 times.",
+            "type": "MONSTER_JOHN_JEFF",
+            "spawn": {"x": 6, "y": 0, "z": -8},
+            "speed": 3.0,
+            "attack_range": 25.0,
+            "sight_range": 999.0,
+            "behavior": {
+                "jingle_trigger_min": 15,
+                "jingle_trigger_max": 17,
+                "hostile_duration": 8.0,
+                "neck_extend_animation": true
+            },
+            "color": {
+                "friendly": {"r": 100, "g": 80, "b": 60, "a": 255},
+                "hostile": {"r": 200, "g": 0, "b": 0, "a": 255}
+            }
+        },
+        "polly": {
+            "name": "Potty the Parrot",
+            "description": "Loves to yap and fight. Violent at random times, pecks at your skull.",
+            "type": "MONSTER_POTTY",
+            "spawn": {"x": 3, "y": 0, "z": -6},
+            "speed": 3.5,
+            "attack_range": 1.5,
+            "sight_range": 15.0,
+            "behavior": {
+                "violence_interval_min": 30.0,
+                "violence_interval_max": 90.0,
+                "hostile_duration_min": 5.0,
+                "hostile_duration_max": 10.0,
+                "random_violence": true
+            },
+            "color": {
+                "friendly": {"r": 0, "g": 150, "b": 0, "a": 255},
+                "hostile": {"r": 200, "g": 0, "b": 0, "a": 255}
+            }
+        },
+        "indiana": {
+            "name": "Miss Indiana",
+            "description": "Always nice. Answers questions about exhibits.",
+            "type": "MONSTER_INDIANA",
+            "spawn": {"x": -3, "y": 0, "z": 3},
+            "speed": 0.0,
+            "attack_range": 0.0,
+            "sight_range": 10.0,
+            "behavior": {
+                "always_hostile": false,
+                "can_hurt_player": false,
+                "dialogue_type": "exhibit_info",
+                "sacrifice_event": true
+            },
+            "color": {
+                "friendly": {"r": 160, "g": 82, "b": 45, "a": 255},
+                "hostile": {"r": 160, "g": 82, "b": 45, "a": 255}
+            }
+        },
+        "patriot": {
+            "name": "Old Guy Patriot",
+            "description": "Guards American Revolution exhibit. Shoots if you break exhibit rules.",
+            "type": "MONSTER_PATRIOT",
+            "spawn": {"x": -8, "y": 0, "z": -3},
+            "speed": 2.5,
+            "attack_range": 2.0,
+            "sight_range": 15.0,
+            "behavior": {
+                "patrol_speed_multiplier": 0.4,
+                "patrol_follow_distance": 8.0,
+                "shoots_on_rule_break": true,
+                "exhibit_rules": [
+                    "Do not touch the exhibits",
+                    "Stay behind the rope barrier",
+                    "No running in the exhibit"
+                ]
+            },
+            "color": {
+                "friendly": {"r": 30, "g": 50, "b": 80, "a": 255},
+                "hostile": {"r": 200, "g": 0, "b": 0, "a": 255}
+            }
+        }
+    },
+    "player": {
+        "health": 100,
+        "max_health": 100,
+        "walk_speed": 5.0,
+        "sprint_speed": 8.0,
+        "is_injured": false,
+        "location_injured": null,
+        "pos": {"x": 0, "y": 1.7, "z": 0},
+        "inventory": {
+            "size": 12,
+            "contents": {}
+        }
+    },
+    "settings": {
+        "master_volume": 1.0,
+        "mouse_sensitivity": 0.003,
+        "game_minutes_per_second": 1.0,
+        "start_hour": 9,
+        "start_minute": 0
+    },
+    "game_state": "menu",
+    "in_game_time": 9045
+}
